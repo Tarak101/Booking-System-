@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Travel</h1>
+    </header>
+    <main>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="destination">Enter Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers" min="1" required>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+        <section id="recommendations">
+            <h2>Best Places to Visit in This Season </h2>
+            <ul>
+                <li>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/675172642/pura-ulun-danu-bratan-temple-in-Bali-/960x0.jpg?format=jpg&width=1440" alt="Bali">
+                    <p>Bali, Indonesia</p>
+                </li>
+                <li>
+                    <img src="https://res.klook.com/image/upload/c_fill,w_1081,h_608/q_65/activities/dxwsayfogszyqti0stzu.webp" alt="Amalfi Coast">
+                    <p>Amalfi Coast, Italy</p>
+                </li>
+                <li>
+                    <img src="https://cdn.britannica.com/41/150941-050-B8236E18/Moraine-Lake-Banff-National-Park-Canada-Alberta.jpg?w=300" alt="Banff National Park">
+                    <p>Banff National Park, Canada</p>
+                </li>
+                <li>
+                    <img src="https://cdn.britannica.com/94/77394-050-08F469E7/Spring-cherry-blossoms-pagoda-Japan-Kyoto.jpg?w=300" alt="Kyoto">
+                    <p>Kyoto, Japan</p>
+                </li>
+                <li>
+                    <img src="https://cdn.britannica.com/71/73371-050-9DFAEC1E/Reykjavik-Iceland.jpg?w=300" alt="Reykjavik">
+                    <p>Reykjavik, Iceland</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="now.js"></script>
+</body>
+</html>
